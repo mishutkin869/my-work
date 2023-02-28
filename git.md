@@ -113,6 +113,43 @@ necessitatibus magni provident non saepe sequi?
 
 ## Исходный код
 
+В чистом Маркдауне блоки кода отбиваются 4 пробелами в начале
+каждой строки.
+Но в GitHub-Flavored Markdown (сокращенно GFM) есть более
+удобный способ: ставим по три апострофа (на букве Ё) до и после
+кода. Также можно указать язык исходного кода. 
+ 
+ ```html 
+
+
+<nav class="nav nav-primary">
+ <ul>
+ <li class="tab-conversation active">
+ <a href="#" data-role="post-count" class="publ
+isher-nav-color" data-nav="conversation">
+ <span class="comment-count">0 комментариев</
+span>
+ <span class="comment-count-placeholder">Комм
+ентарии</span>
+ </a>
+ </li>
+ <li class="dropdown user-menu" data-role="logou
+t">
+ <a href="#" class="dropdown-toggle" data-toggl
+e="dropdown">
+ <span class="dropdown-toggle-wrapper">
+ <span>
+ Войти
+ </span>
+ </span>
+ <span class="caret"></span>
+ </a>
+ </li>
+ </ul>
+</nav> 
+```
+
+
 ## Таблицы
 
 В чистом Маркдауне нет синтаксиса для таблиц, а в GFM
@@ -139,5 +176,23 @@ Content Cell | Content Cell
 Для всего остального есть обычный HTML. 
 
 ## Изображения
+
+Картинка без `alt` текста
+![](//placehold.it/150x100)
+Картинка с альтом и тайтлом:
+![Alt text](//placehold.it/150x100 "Можно задать title")
+Запомнить просто: синтаксис как у ссылок, только перед
+открывающей квадратной скобкой ставится восклицательный
+знак.
+Картинки «сноски»:
+![Картинка][image1]
+![Картинка][image2]
+![Картинка][image3]
+[image1]: //placehold.it/250x100
+[image2]: //placehold.it/200x100
+[image3]: //placehold.it/150x100
+Картинки-ссылки:
+[![Alt text](//placehold.it/150x100)]
+(http://example.com/)
 
 ##
