@@ -318,4 +318,5 @@ Content Cell | Content Cell
 [![Alt text](//placehold.it/150x100)]
 (http://example.com/)
 
-# Дополнить работу определениями git
+# Дополнить работу определениями git 
+Добавили текст для обучения
